@@ -12,7 +12,6 @@
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = system;
-        specialArgs = {inherit inputs;};
         modules = [
           ./hardware-configuration.nix
           ./modules/boot.nix
