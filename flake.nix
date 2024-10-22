@@ -2,7 +2,7 @@
   description="Modular NixOS configuration with gaming and desktop setup";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nix-gaming.url = "github:fufexan/nix-gaming";
   };
 
