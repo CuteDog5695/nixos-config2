@@ -6,12 +6,13 @@
     nix-gaming.url = "github:fufexan/nix-gaming";
   };
 
-  outputs = { nixpkgs, nix-gaming, ... }:
+  outputs = { nixpkgs, ... }:
     let
       system = "x86_64-linux"; # Change this if needed
     in {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = system;
+        specialArgs = {inherit inputs;};
         modules = [
           ./hardware-configuration.nix
           ./modules/boot.nix
