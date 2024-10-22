@@ -22,9 +22,6 @@
     })
     nix-gaming.packages.${pkgs.hostPlatform.system}.osu-lazer-bin
     libreoffice-qt
-    hunspell
-    hunspellDicts.uk_UA
-    hunspellDicts.th_TH
     whatsapp-for-linux
     pkgs.chromium
     pkgs.epson-escpr2
