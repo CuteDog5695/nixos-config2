@@ -3,10 +3,7 @@
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    nix-gaming = {
-      url = "github:fufexan/nix-gaming";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nix-gaming.url = "github:fufexan/nix-gaming";
   };
 
   outputs = { nixpkgs, nix-gaming, ... }:
